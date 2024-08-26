@@ -1,1 +1,1 @@
-# simple-java-mail
+# simple-java-mail-java-8

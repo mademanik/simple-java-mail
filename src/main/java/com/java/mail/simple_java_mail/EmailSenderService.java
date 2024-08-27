@@ -20,7 +20,8 @@ public class EmailSenderService {
                           String subject,
                           String body) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("blimanikyasa@gmail.com");
+        message.setFrom("blimanikyasa@gmail.com");//enable jika gmail
+//        message.setFrom("portal.bcp@devmandiri.co.id");//enable jika non gmail
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
@@ -37,7 +38,8 @@ public class EmailSenderService {
         MimeMessage mimeMessage = mailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
 
-        mimeMessageHelper.setFrom("blimanikyasa@gmail.com");
+        mimeMessageHelper.setFrom("blimanikyasa@gmail.com");//enable jika gmail
+//        mimeMessageHelper.setFrom("portal.bcp@devmandiri.co.id");//enable jika non gmail
         mimeMessageHelper.setTo(toEmail);
         mimeMessageHelper.setText(body);
         mimeMessageHelper.setSubject(subject);
